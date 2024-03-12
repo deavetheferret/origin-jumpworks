@@ -26,18 +26,26 @@
 
 <script setup>
 import { ref } from "vue";
-import oNav from "./o-nav.vue";
+import oNav from "@/components/o-nav.vue";
 
 const navOpen = ref(false);
 const openNav = () => {
   navOpen.value = !navOpen.value;
-  console.log(navOpen.value);
   const burgerMenu = document.querySelector(".burger-menu");
   burgerMenu.classList.toggle("open");
+  document.body.classList.toggle("no-scroll");
 };
 </script>
 
 <style scoped>
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+}
+
 .v-col {
   display: flex;
   align-items: center;

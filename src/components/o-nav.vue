@@ -4,10 +4,10 @@
       <v-row>
         <v-col cols="5">
           <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Ships</a></li>
+            <li><router-link to="/">Home</router-link></li>
+            <li><router-link to="/events">Events</router-link></li>
+            <li><router-link to="/history">History</router-link></li>
+            <li><router-link to="/ships">Ships</router-link></li>
           </ul>
         </v-col>
         <img src="../assets/img/appart-poster.png" alt="" />
@@ -20,11 +20,20 @@
 
 <style scoped>
 nav {
-  height: 85vh;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
+  background-color: var(--ori-color-white);
+  animation: slide-out var(--ori-trans);
+  &.open {
+    animation: slide-in var(--ori-trans);
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -37,7 +46,7 @@ nav {
         display: inline-block;
         font-weight: 300;
         transform: translateX(0);
-        transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: transform var(--ori-trans);
         &:hover {
           transform: translateX(12px);
         }
