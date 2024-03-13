@@ -2,16 +2,16 @@
   <header>
     <v-container>
       <v-row>
-        <v-col cols="1">
+        <v-col cols="2">
           <div class="burger-menu" @click="openNav">
             <div class="burger-menu-bar-1"></div>
             <div class="burger-menu-bar-2"></div>
           </div>
         </v-col>
-        <v-col cols="9" class="logo-col">
+        <v-col cols="8" class="logo-col">
           <img src="../assets/img/logo.svg" alt="origin jumpworks logo" />
         </v-col>
-        <v-col cols="2" class="link-col">
+        <v-col cols="2" class="link-col interactable">
           <a
             href="https://robertsspaceindustries.com/pledge/ships?manufacturer_id%5B%5D=6"
             target="_blank"
@@ -66,7 +66,7 @@ header {
   }
 }
 .burger-menu {
-  width: 60%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   gap: 12px;

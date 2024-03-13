@@ -10,7 +10,7 @@
           <p>
             {{ content }}
           </p>
-          <a :href="pageLink">
+          <a :href="pageLink" class="interactable">
             <span>—</span>
             {{ buttonText }}
           </a>
@@ -61,10 +61,21 @@ export default {
   background-position: center;
   display: flex;
   align-items: flex-end;
-  padding: 160px 0;
+  padding: 100px 0;
   h2 {
     font-size: 32px;
     font-weight: 500;
+  }
+  a {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 50px;
+    }
   }
 }
 </style>
