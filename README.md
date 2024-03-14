@@ -1,6 +1,6 @@
 # Origin Jumpworks
 
-![The thumbnail of the project](src/assets/img/thumbnail-web.png)
+![The thumbnail of the project](public/thumbnail-web.png)
 
 **[origin-jumpworks.space](https://www.origin-jumpworks.space)**
 
@@ -13,8 +13,6 @@
   - [Moodboard — Website](#moodboard--website)
   - [Wireframe](#wireframe)
   - [Prototype](#prototype)
-  - [Development](#development)
-- [Gallery](#gallery)
 - [miscellaneous](#miscellaneous)
   - [Special thanks](#special-thanks)
   - [Social media](#social-media)
@@ -49,27 +47,15 @@ This project invites you to visit the website of a company set in the lore of St
 
 ### Moodboard — Branding
 
-![brand moodboard](src/assets/img/mood-brand.png)
+![brand moodboard](public/mood-brand.png)
 
 ### Wireframe
 
-![Website wireframe](src/assets/img/wireframe.png)
+![Website wireframe](public/wireframe.png)
 
 ### Prototype
 
-![Website prototype](src/assets/img/prototype.png)
-
-### Development
-
-## Gallery
-
-|                                                        |                                                          |                                                         |
-| :----------------------------------------------------: | :------------------------------------------------------: | :-----------------------------------------------------: |
-|     ![Website prototype](src/assets/img/100i.webp)     |  ![Website prototype](src/assets/img/100i-ext-03.webp)   |  ![Website prototype](src/assets/img/100i-ext-01.webp)  |
-|     ![Website prototype](src/assets/img/400i.webp)     |  ![Website prototype](src/assets/img/600i-shadows.webp)  |    ![Website prototype](src/assets/img/890jump.webp)    |
-| ![Website prototype](src/assets/img/appart-poster.png) |  ![Website prototype](src/assets/img/cologne-2857.webp)  | ![Website prototype](src/assets/img/invictus-week.webp) |
-| ![Website prototype](src/assets/img/g12-exterior.png)  |   ![Website prototype](src/assets/img/g12-garage.png)    |      ![Website prototype](src/assets/img/g12.webp)      |
-|     ![Website prototype](src/assets/img/m50.webp)      | ![Website prototype](src/assets/img/400i-landscape.webp) |  ![Website prototype](src/assets/img/100i-colors.webp)  |
+![Website prototype](public/prototype.png)
 
 ## Miscellaneous
 

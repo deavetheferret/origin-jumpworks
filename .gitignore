@@ -35,6 +35,7 @@ coverage
 *.jpg
 *.jpeg
 *.png
+*.svg
 *.gif
 *.webp
 *.webm
