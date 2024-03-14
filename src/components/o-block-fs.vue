@@ -5,7 +5,7 @@
   >
     <v-container>
       <v-row>
-        <v-col cols="4">
+        <v-col cols="4" class="data-col">
           <h2>{{ title }}</h2>
           <p>
             {{ content }}
