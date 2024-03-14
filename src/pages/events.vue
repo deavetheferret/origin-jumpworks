@@ -1,6 +1,6 @@
 <template>
   <main>
-    <section>
+    <section id="featured">
       <o-block
         title="IAE 2954"
         content="Come see us at the annual ship showroom for the IAE 2954. We will let you test and purchase our ships as you always want. Don't miss the chance to see the best of the best."
@@ -9,10 +9,12 @@
         buttonText="See the schedule"
       >
       </o-block>
+    </section>
+    <section id="this-year">
       <o-block-fs
         title="Embrace the luxury"
         content="The 600I serie is here to let you have the rest you deserve. Across the stars and landscapes, take your time without constrinct."
-        imgLink="src/assets/img/600i-shadows.webp"
+        imgLink="src/assets/img/g12-exterior.png"
       >
       </o-block-fs>
     </section>

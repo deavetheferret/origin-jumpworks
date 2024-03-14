@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="2">
-          <div class="burger-menu" @click="openNav">
+          <div class="burger-menu" @click="toggleNav">
             <div class="burger-menu-bar-1"></div>
             <div class="burger-menu-bar-2"></div>
           </div>
@@ -20,7 +20,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <o-nav v-if="navOpen"></o-nav>
+    <o-nav :navOpen="navOpen" @toggleNav="toggleNav"></o-nav>
   </header>
 </template>
 
@@ -29,11 +29,13 @@ import { ref } from "vue";
 import oNav from "@/components/o-nav.vue";
 
 const navOpen = ref(false);
-const openNav = () => {
+
+const toggleNav = () => {
   navOpen.value = !navOpen.value;
   const burgerMenu = document.querySelector(".burger-menu");
   burgerMenu.classList.toggle("open");
   document.body.classList.toggle("no-scroll");
+  return { navOpen, toggleNav };
 };
 </script>
 
@@ -66,7 +68,7 @@ header {
   }
 }
 .burger-menu {
-  width: 25%;
+  width: var(--burger-bars-length);
   display: flex;
   flex-direction: column;
   gap: 12px;

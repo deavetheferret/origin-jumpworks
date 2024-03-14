@@ -1,22 +1,35 @@
 <template ref="o-navigation">
-  <nav>
+  <nav class="nav" :class="{ open: navOpen }">
     <v-container>
       <v-row>
         <v-col cols="5">
-          <ul>
+          <ul class="nav-links" :class="{ open: navOpen }">
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/events">Events</router-link></li>
             <li><router-link to="/history">History</router-link></li>
             <li><router-link to="/ships">Ships</router-link></li>
           </ul>
         </v-col>
-        <img src="../assets/img/appart-poster.png" alt="" />
+        <img
+          class="nav-image"
+          :class="{ open: navOpen }"
+          src="../assets/img/appart-poster.png"
+          alt=""
+        />
       </v-row>
     </v-container>
   </nav>
 </template>
 
-<script></script>
+<script>
+import { ref, toRefs } from "vue";
+
+export default {
+  props: {
+    navOpen: Boolean,
+  },
+};
+</script>
 
 <style scoped>
 nav {
@@ -31,9 +44,6 @@ nav {
   justify-content: center;
   background-color: var(--ori-color-white);
   animation: slide-out var(--ori-trans);
-  &.open {
-    animation: slide-in var(--ori-trans);
-  }
   ul {
     display: flex;
     flex-direction: column;
@@ -62,5 +72,32 @@ nav {
     top: 55%;
     transform: translateY(-52%);
   }
+}
+
+.nav {
+  transform: translateY(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.nav.open {
+  transform: translateY(0);
+}
+
+.nav-links {
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out 0.2s; /* delay of 0.2s */
+}
+
+.nav-links.open {
+  transform: translateX(0);
+}
+
+.nav-image {
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.nav-image.open {
+  transform: translateX(0);
 }
 </style>
