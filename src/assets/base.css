@@ -3,7 +3,7 @@
   --ori-color-white: #dddee2;
   --ori-color-black: #1f1f1f;
   --ori-color-accent: #0029ff;
-  --ori-trans: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  --ori-trans: cubic-bezier(0.075, 0.82, 0.165, 1);
   --burger-bars-length: calc(100% / 12 * 3);
 }
 

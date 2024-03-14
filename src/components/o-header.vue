@@ -55,7 +55,7 @@ header {
 .logo-col {
   justify-content: center;
   img {
-    transition: transform var(--ori-trans);
+    transition: transform 0.2s var(--ori-trans);
     &:hover {
       transform: scale(1.1);
     }
@@ -98,6 +98,6 @@ header {
   width: 100%;
   transform-origin: 0 50%;
   background-color: #1f1f1f;
-  transition: transform var(--ori-trans);
+  transition: transform 0.2s var(--ori-trans);
 }
 </style>
