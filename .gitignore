@@ -44,6 +44,7 @@ coverage
 *.ttf
 *.otf
 *.ico
+
 assets/img/*
 assets/video/*
 assets/fonts/*
