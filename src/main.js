@@ -19,3 +19,17 @@ const app = createApp(App);
 app.use(router);
 app.use(vuetify);
 app.mount("#app");
+
+const detectDevTools = () => {
+  const isDevToolsOpened = /./;
+  isDevToolsOpened.toString = () => {
+    console.log(
+      "💀\n≤))≥\n_||_ are u serious rn?\n\nYou really thought that stealing my code was ok?"
+    );
+    return "Looking something in my code...";
+  };
+
+  console.log(isDevToolsOpened);
+};
+
+detectDevTools();

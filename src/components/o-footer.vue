@@ -132,6 +132,7 @@ footer {
     flex-direction: column;
     li {
       opacity: 0.5;
+      position: relative;
     }
   }
   img.logo-wide {
