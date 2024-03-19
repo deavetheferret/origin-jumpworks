@@ -1,35 +1,55 @@
 <template>
   <main>
+    <section id="overview">
+      <o-block
+        title="Since 2754 you have more than a spaceship"
+        content="Origin Jumpworks started its journey on the shores of the Rhine in Cologne, Earth. Incorporated during the mid-28th century, the company gained recognition for producing high-quality thrusters for the UEE military. — First era"
+        mediaLink="src/assets/img/cologne-2857.webp"
+        buttonText=""
+      ></o-block>
+    </section>
     <section>
-      <o-block-fs
-        title="Embrace the luxury"
-        content="The 600I serie is here to let you have the rest you deserve. Across the stars and landscapes, take your time without constrinct."
-        imgLink="src/assets/img/600i-shadows.webp"
+      <o-block
+        title="New journey to New Austin"
+        content="Origin Jumpworks envisions a future defined by continued innovation and expansion. Origin aims to further diversify its lineup, offering a range of spacecraft tailored to meet the evolving needs and desires of its discerning clientele in the ever-expanding universe of space travel. — Second era"
+        mediaLink="src/assets/img/terra-new-austin.webp"
+        buttonText=""
+      ></o-block>
+    </section>
+    <section>
+      <o-block
+        title="Looking ahead"
+        content="Origin Jumpworks envisions a future defined by continued innovation and expansion. Origin aims to further diversify its lineup, offering a range of spacecraft tailored to meet the evolving needs and desires of its discerning clientele in the ever-expanding universe of space travel. — Third era"
+        mediaLink="src/assets/img/100i-sketch-01.webp"
+        buttonText=""
+      ></o-block>
+    </section>
+    <section id="gallery">
+      <o-block
+        title="Over the years and over the cameras."
+        content="For a several years we filmed and took picture of our events or presence at some events.
+For all this time we gather a complete art gallery of our designs and contributors."
+        buttonText="See the gallery"
+        mediaLink="src/assets/img/400i-landscape.webp"
       >
-      </o-block-fs>
-      <o-block-fs></o-block-fs>
-      <o-block-fs></o-block-fs>
-      <o-block-fs></o-block-fs>
+      </o-block>
     </section>
   </main>
 </template>
 
 <script setup>
-import oBlockFs from "@/components/o-block-fs.vue";
+import oBlock from "@/components/o-block.vue";
 </script>
 
 <style scoped>
 main {
   height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   section {
-    height: 100vh;
-    width: 100vw;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    div {
-      flex: none;
-      scroll-snap-align: start;
-    }
+    flex: none;
+    scroll-snap-align: start;
   }
 }
 </style>

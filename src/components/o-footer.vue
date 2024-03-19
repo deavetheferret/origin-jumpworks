@@ -58,11 +58,6 @@
                   <router-link to="/history#overview">Overview</router-link>
                 </li>
                 <li>
-                  <router-link to="/history#ship-concept"
-                    >Ships concept</router-link
-                  >
-                </li>
-                <li>
                   <router-link to="/history#gallery">Gallery</router-link>
                 </li>
               </ul>

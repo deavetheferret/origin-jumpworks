@@ -15,7 +15,7 @@
           <p>
             {{ content }}
           </p>
-          <a :href="pageLink">
+          <a v-if="buttonText" :href="pageLink">
             <span>—</span>
             {{ buttonText }}
           </a>
