@@ -10,7 +10,7 @@
           <p>
             {{ content }}
           </p>
-          <a :href="pageLink" class="interactable">
+          <a :href="pageLink">
             <span>—</span>
             {{ buttonText }}
           </a>
@@ -47,7 +47,6 @@ export default {
     pageLink: {
       type: String,
       required: false,
-      default: "#",
     },
   },
 };

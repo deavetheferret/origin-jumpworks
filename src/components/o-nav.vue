@@ -4,14 +4,26 @@
       <v-row>
         <v-col cols="5">
           <ul class="nav-links" :class="{ open: navOpen }">
-            <li class="link-a"><router-link to="/">Home</router-link></li>
+            <li class="link-a">
+              <router-link @click.native="handleLinkClick" to="/"
+                >Home</router-link
+              >
+            </li>
             <li class="link-b">
-              <router-link to="/events">Events</router-link>
+              <router-link @click.native="handleLinkClick" to="/events"
+                >Events</router-link
+              >
             </li>
             <li class="link-c">
-              <router-link to="/history">History</router-link>
+              <router-link @click.native="handleLinkClick" to="/history"
+                >History</router-link
+              >
             </li>
-            <li class="link-d"><router-link to="/ships">Ships</router-link></li>
+            <li class="link-d">
+              <router-link @click.native="handleLinkClick" to="/ships"
+                >Ships</router-link
+              >
+            </li>
           </ul>
         </v-col>
         <img
@@ -29,6 +41,12 @@
 export default {
   props: {
     navOpen: Boolean,
+  },
+  methods: {
+    handleLinkClick(eB) {
+      eB.preventDefault();
+      this.$emit("toggleNav");
+    },
   },
 };
 </script>
@@ -66,16 +84,16 @@ nav.nav {
       transform: translateX(-400%);
       transition: transform 1s var(--ori-trans);
       &.link-a {
-        transition-delay: 0.2s;
+        transition-delay: 0s;
       }
       &.link-b {
-        transition-delay: 0.4s;
+        transition-delay: 0.2s;
       }
       &.link-c {
-        transition-delay: 0.6s;
+        transition-delay: 0.4s;
       }
       &.link-d {
-        transition-delay: 0.8s;
+        transition-delay: 0.6s;
       }
 
       a {
@@ -97,7 +115,7 @@ nav.nav {
     right: 0;
     top: 55%;
     transform: translate(400%, -52%);
-    transition: transform 1s var(--ori-trans) 0.8s;
+    transition: transform 1s var(--ori-trans) 0.4s;
     &.open {
       transform: translate(0, -52%);
     }

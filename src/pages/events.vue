@@ -5,7 +5,7 @@
         title="IAE 2954"
         content="Come see us at the annual ship showroom for the IAE 2954. We will let you test and purchase our ships as you always want. Don't miss the chance to see the best of the best."
         mediaLink="src/assets/img/iae2953.webp"
-        buttonLink="/events"
+        pageLink="https://robertsspaceindustries.com/iae2954#"
         buttonText="See the schedule"
       >
       </o-block>
@@ -15,7 +15,8 @@
         title="CitizenCon 2954"
         content="CitizenCon 2954 returns to Manchester Central on October 19-20. We are going to show our latest innovations and ships concepts. As always, we love to see you, who’s buying our ships and the citizenCon is the best place for that. — October 19-20 2954"
         imgLink="src/assets/img/g12-exterior.png"
-        buttonText="Get your tickets"
+        pageLink="https://robertsspaceindustries.com/citizencon"
+        buttonText="Save the date"
       >
       </o-block-fs>
     </section>
@@ -39,10 +40,9 @@
     <section id="passed-events">
       <o-block-wide
         title="CitizenCon 2953"
-        content="Last year, we were glad to present you the 400I that we teased for a couple of years, but it wasn’t the only thing to see. The UEE has spelled on the Pyro’s conflict and the opportunity to go there. Obviously we’re not going to place a Pyro’s dealer.
-
-— October 19-20 2953"
+        content="Last year, we were glad to present you the 400I that we teased for a couple of years, but it wasn't the only thing to see. The UEE has spelled on the Pyro's conflict and the opportunity to go there. Obviously we're not going to place a Pyro's dealer. — October 19-20 2953"
         buttonText="See how it was"
+        pageLink="https://robertsspaceindustries.com/iae2953#"
         imgLink="src/assets/img/g12-exterior.png"
       ></o-block-wide>
       <o-block-wide
