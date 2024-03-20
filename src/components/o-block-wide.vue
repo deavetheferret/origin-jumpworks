@@ -30,17 +30,17 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
       default: "Wide block",
     },
     imgLink: {
       type: String,
-      required: true,
+      required: false,
       default: "src/assets/img/600i-shadows.webp",
     },
     content: {
       type: String,
-      required: true,
+      required: false,
       default:
         "This is a wide block. Use it like a half page, with a background image and content on top of it.",
     },

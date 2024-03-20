@@ -10,10 +10,14 @@
           <p>
             {{ content }}
           </p>
-          <a v-if="buttonText" :href="pageLink">
+          <router-link v-if="pageLink" :to="pageLink" class="button">
             <span>—</span>
             {{ buttonText }}
-          </a>
+          </router-link>
+          <div v-else class="button">
+            <span>—</span>
+            {{ buttonText }}
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -25,28 +29,28 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+
       default: "Fullscreen block",
     },
     imgLink: {
       type: String,
-      required: true,
+
       default: "src/assets/img/600i-shadows.webp",
     },
     content: {
       type: String,
-      required: true,
+
       default:
         "This is a fullscreen block. Use it to add images as background and content on top of it.",
     },
     buttonText: {
       type: String,
-      required: false,
+
       default: "Learn more",
     },
     pageLink: {
       type: String,
-      required: false,
+      default: "#",
     },
   },
 };
@@ -65,7 +69,7 @@ export default {
     font-size: 32px;
     font-weight: 500;
   }
-  a {
+  .button {
     margin-top: 20px;
     font-weight: 500;
     font-size: 24px;

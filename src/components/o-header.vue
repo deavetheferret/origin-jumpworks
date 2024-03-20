@@ -20,7 +20,11 @@
         </v-col>
       </v-row>
     </v-container>
-    <o-nav :navOpen="navOpen" @toggleNav="toggleNav"></o-nav>
+    <o-nav
+      :navOpen="navOpen"
+      @toggleNav="toggleNav"
+      @closeNav="closeNav"
+    ></o-nav>
   </header>
 </template>
 
@@ -35,7 +39,10 @@ const toggleNav = () => {
   const burgerMenu = document.querySelector(".burger-menu");
   burgerMenu.classList.toggle("open");
   document.body.classList.toggle("no-scroll");
-  return { navOpen, toggleNav };
+};
+
+const closeNav = () => {
+  navOpen.value = false;
 };
 </script>
 

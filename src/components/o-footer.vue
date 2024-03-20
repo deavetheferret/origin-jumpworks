@@ -9,9 +9,9 @@
             class="logo-wide"
           />
           <ul>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Cookie policy</a></li>
+            <li><a href="/policies#terms">Terms of service</a></li>
+            <li><a href="/policies#privacy">Privacy policy</a></li>
+            <li><a href="/privacy#cookie">Cookie policy</a></li>
           </ul>
         </v-col>
         <v-col cols="1"></v-col>

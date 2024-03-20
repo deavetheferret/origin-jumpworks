@@ -28,18 +28,18 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
       default: "Fullscreen block",
     },
     content: {
       type: String,
-      required: true,
+      required: false,
       default:
         "This is a fullscreen block. Use it to add images as background and content on top of it.",
     },
     mediaLink: {
       type: String,
-      required: true,
+      required: false,
       default: "src/assets/img/600i-shadows.webp",
     },
     buttonText: {
