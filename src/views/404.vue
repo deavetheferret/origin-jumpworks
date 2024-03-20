@@ -21,9 +21,6 @@
 .o-container {
   width: 100vw;
   height: 100vh;
-  background-repeat: repeat;
-  background-position: center;
-  background-image: url("src/assets/img/g12.webp");
   display: flex;
   justify-content: center;
   align-items: center;

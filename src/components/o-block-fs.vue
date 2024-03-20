@@ -35,7 +35,7 @@ export default {
     imgLink: {
       type: String,
 
-      default: "src/assets/img/600i-shadows.webp",
+      default: "../assets/img/600i-shadows.webp",
     },
     content: {
       type: String,

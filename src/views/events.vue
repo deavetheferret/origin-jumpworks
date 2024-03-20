@@ -4,7 +4,7 @@
       <o-block
         title="IAE 2954"
         content="Come see us at the annual ship showroom for the IAE 2954. We will let you test and purchase our ships as you always want. Don't miss the chance to see the best of the best."
-        mediaLink="src/assets/img/iae2953.webp"
+        :mediaLink="iae2953"
         pageLink="https://robertsspaceindustries.com/iae2954#"
         buttonText="See the schedule"
       >
@@ -14,7 +14,7 @@
       <o-block-fs
         title="CitizenCon 2954"
         content="CitizenCon 2954 returns to Manchester Central on October 19-20. We are going to show our latest innovations and ships concepts. As always, we love to see you, who’s buying our ships and the citizenCon is the best place for that. — October 19-20 2954"
-        imgLink="src/assets/img/g12-exterior.png"
+        :imgLink="g12Exterior"
         pageLink="https://robertsspaceindustries.com/citizencon"
         buttonText="Save the date"
       >
@@ -24,7 +24,7 @@
       <o-block-fs
         title="New Austin technology and innovations center"
         content="This year we have and we expect to done a lot of innovations that can probably change how we think the space-travel for the next 10 years. We are proud to show you all our discoveries and brevets at the TIC 2955. — January 10-12 2955"
-        imgLink="src/assets/img/g12-garage.png"
+        :imgLink="g12Garage"
         buttonText="See the schedule"
       >
       </o-block-fs>
@@ -34,7 +34,7 @@
         title="Together to gather"
         content="By joining us as a contributor, member or partner, you will be raise straight to the great origin family circle. Be that high in the sky that we cannot even see the clouds of Stanton 2."
         buttonText="Join us"
-        mediaLink="src/assets/img/club-box.png"
+        :mediaLink="clubBox"
       ></o-block>
     </section>
     <section id="passed-events">
@@ -43,7 +43,7 @@
         content="Last year, we were glad to present you the 400I that we teased for a couple of years, but it wasn't the only thing to see. The UEE has spelled on the Pyro's conflict and the opportunity to go there. Obviously we're not going to place a Pyro's dealer. — October 19-20 2953"
         buttonText="See how it was"
         pageLink="https://robertsspaceindustries.com/iae2953#"
-        imgLink="src/assets/img/g12-exterior.png"
+        :imgLink="../assets/img/g12-exterior.png"
       ></o-block-wide>
       <o-block-wide
         title="Invictus Launch Week"
@@ -51,7 +51,7 @@
 
 — May 19-30 2953"
         buttonText="See how it was"
-        imgLink="src/assets/img/invictus-week.webp"
+        :imgLink="invictusWeek"
       ></o-block-wide>
     </section>
     <section id="Gallery">
@@ -60,7 +60,7 @@
         content="For a several years we filmed and took picture of our events or presence at some events.
 For all this time we gather a complete art gallery of our designs and contributors."
         buttonText="See the gallery"
-        mediaLink="src/assets/img/400i-landscape.webp"
+        :mediaLink="landscape400i"
       >
       </o-block>
     </section>
@@ -71,6 +71,13 @@ For all this time we gather a complete art gallery of our designs and contributo
 import oBlockFs from "@/components/o-block-fs.vue";
 import oBlock from "@/components/o-block.vue";
 import oBlockWide from "@/components/o-block-wide.vue";
+
+import iae2953 from "@/assets/img/iae2953.webp";
+import g12Exterior from "@/assets/img/g12-exterior.png";
+import g12Garage from "@/assets/img/g12-garage.png";
+import clubBox from "@/assets/img/club-box.png";
+import invictusWeek from "@/assets/img/invictus-week.webp";
+import landscape400i from "@/assets/img/400i-landscape.webp";
 </script>
 
 <style scoped>

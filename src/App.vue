@@ -22,7 +22,5 @@ import router from "@/router.js";
   pointer-events: none;
   z-index: 1000;
   mix-blend-mode: multiply;
-  background: url(assets/img/bg-noise-source.png),
-    lightgray 0% 0% / 69.53125px 69.53125px repeat;
 }
 </style>

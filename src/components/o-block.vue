@@ -40,7 +40,7 @@ export default {
     mediaLink: {
       type: String,
       required: false,
-      default: "src/assets/img/600i-shadows.webp",
+      default: "../assets/img/600i-shadows.webp",
     },
     buttonText: {
       type: String,
