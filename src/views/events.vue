@@ -6,6 +6,7 @@
         content="Come see us at the annual ship showroom for the IAE 2954. We will let you test and purchase our ships as you always want. Don't miss the chance to see the best of the best."
         :mediaLink="iae2953"
         pageLink="https://robertsspaceindustries.com/iae2954#"
+        linkDisabled="false"
         buttonText="See the schedule"
       >
       </o-block>
@@ -34,6 +35,7 @@
         title="Together to gather"
         content="By joining us as a contributor, member or partner, you will be raise straight to the great origin family circle. Be that high in the sky that we cannot even see the clouds of Stanton 2."
         buttonText="Join us"
+        pageLink=""
         :mediaLink="clubBox"
       ></o-block>
     </section>
@@ -61,6 +63,7 @@
 For all this time we gather a complete art gallery of our designs and contributors."
         buttonText="See the gallery"
         :mediaLink="landscape400i"
+        pageLink=""
       >
       </o-block>
     </section>

@@ -10,7 +10,12 @@
           <p>
             {{ content }}
           </p>
-          <router-link v-if="pageLink" :to="pageLink" class="button">
+          <router-link
+            v-if="pageLink"
+            :to="pageLink"
+            class="button"
+            :class="{ linkStatement: linkDisabled }"
+          >
             <span>—</span>
             {{ buttonText }}
           </router-link>
@@ -46,7 +51,12 @@ export default {
     },
     pageLink: {
       type: String,
-      default: "#",
+      default: "",
+    },
+    linkStatement: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
 };
@@ -74,6 +84,11 @@ export default {
     align-items: center;
     span {
       margin-right: 50px;
+    }
+    &.linkDisabled {
+      pointer-events: none;
+      color: var(--ori-color-black);
+      opacity: 0.5;
     }
   }
 }

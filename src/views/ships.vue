@@ -7,6 +7,7 @@
         buttonText="Learn more"
         :imgLink="ship100i"
         pageLink="/ships/100i"
+        linkStatement="true"
       ></o-block-fs>
     </section>
     <section>
@@ -14,7 +15,6 @@
         title="600I series"
         content="Let the voyage begin with the 2947 600I. This multi-role luxury vessel features an exquisitely detailed hull design that balances performance and versatility in a sleek and timeless form."
         :imgLink="ship600i"
-        pageLink="/ships/600i"
       ></o-block-fs>
     </section>
     <section>
@@ -22,7 +22,6 @@
         title="G12 series"
         content="Let the voyage begin with the 2947 600I. This multi-role luxury vessel features an exquisitely detailed hull design that balances performance and versatility in a sleek and timeless form."
         :imgLink="g12"
-        pageLink="/ships/g12"
       ></o-block-fs>
     </section>
     <section>
@@ -30,7 +29,6 @@
         title=" The M50"
         content="Get the brand new iteration of our famous M50 you’ll be surprised by its power and speed rather than its length. One of the littlest ship ever made in our New Austin’s factory. Be the first to travel that fast and that precize."
         :imgLink="m50"
-        pageLink="/ships/m50"
       ></o-block-fs>
     </section>
     <section>
@@ -38,7 +36,6 @@
         title="The 400I"
         content="Alone you're faster but together you're stronger. The 400I is the perfect ship for a small crew. It's the perfect balance between speed and power. It's the perfect ship for you."
         :imgLink="ship400i"
-        pageLink="/ships/400i"
       ></o-block-fs>
     </section>
     <section>
@@ -46,7 +43,6 @@
         title="The great 890 Jump"
         content="From New Austin to your heart. The 890 Jump is one of the most luxurious ship ever made. It's the perfect way to travel in style and comfort with your guests or your employees. It's the perfect ship for you."
         :imgLink="ship890jump"
-        pageLink="/ships/890jump"
       ></o-block-fs>
     </section>
   </main>

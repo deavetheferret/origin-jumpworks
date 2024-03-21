@@ -7,7 +7,7 @@
           <p>
             {{ content }}
           </p>
-          <a v-if="buttonText" :href="pageLink">
+          <a v-if="pageLink" :href="pageLink">
             <span>—</span>
             {{ buttonText }}
           </a>
@@ -50,7 +50,7 @@ export default {
     pageLink: {
       type: String,
       required: false,
-      default: "/404",
+      default: "",
     },
   },
 };
@@ -96,6 +96,12 @@ export default {
       align-self: flex-end;
       span {
         margin-right: 50px;
+        font-weight: 400;
+      }
+      &.linkDisabled {
+        pointer-events: none;
+        color: var(--ori-color-black);
+        opacity: 0.5;
       }
     }
   }
