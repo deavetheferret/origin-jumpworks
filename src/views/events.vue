@@ -43,7 +43,7 @@
         content="Last year, we were glad to present you the 400I that we teased for a couple of years, but it wasn't the only thing to see. The UEE has spelled on the Pyro's conflict and the opportunity to go there. Obviously we're not going to place a Pyro's dealer. — October 19-20 2953"
         buttonText="See how it was"
         pageLink="https://robertsspaceindustries.com/iae2953#"
-        :imgLink="../assets/img/g12-exterior.png"
+        :imgLink="g12Exterior"
       ></o-block-wide>
       <o-block-wide
         title="Invictus Launch Week"

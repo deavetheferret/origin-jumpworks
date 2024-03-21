@@ -9,7 +9,13 @@
           </div>
         </v-col>
         <v-col cols="8" class="logo-col">
-          <img src="../assets/img/logo.svg" alt="origin jumpworks logo" />
+          <img
+            :src="logoImg"
+            alt="origin jumpworks logo"
+            @click="goHome"
+            @mouseover="itsAlive"
+          />
+          <div class="gradient-bg"></div>
         </v-col>
         <v-col cols="2" class="link-col interactable">
           <a
@@ -32,6 +38,8 @@
 import { ref } from "vue";
 import oNav from "@/components/o-nav.vue";
 
+import logoImg from "@/assets/img/logo.svg";
+
 const navOpen = ref(false);
 
 const toggleNav = () => {
@@ -44,11 +52,26 @@ const toggleNav = () => {
 const closeNav = () => {
   navOpen.value = false;
 };
+
+const goHome = () => {
+  closeNav();
+  window.location.href = "/";
+};
+
+const itsAlive = () => {
+  const gradientBg = document.querySelector(".gradient-bg");
+  const logo = document.querySelector(".logo-col img");
+  gradientBg.classList.add("alive");
+  logo.addEventListener("mouseleave", () => {
+    gradientBg.classList.remove("alive");
+  });
+};
 </script>
 
 <style scoped>
 header {
   position: fixed;
+  padding-top: 20px;
   left: 0;
   top: 0;
   z-index: 900;
@@ -61,17 +84,58 @@ header {
 }
 .logo-col {
   justify-content: center;
+  position: relative;
   img {
-    transition: transform 0.2s var(--ori-trans);
+    cursor: pointer;
+    transition: transform 1s var(--ori-trans);
+    transform: scale(1) translateY(0);
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.1) translateY(10px);
     }
+    z-index: 900;
+  }
+  .gradient-bg {
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    z-index: 899;
+    pointer-events: none;
+    top: -100%;
+    transition: all 1s var(--ori-trans);
+    background: radial-gradient(
+      50.83% 100.67% at 50% 0%,
+      #0029ff -50%,
+      rgba(0, 41, 255, 0) 100%
+    );
+
+    &.alive {
+      height: 100%;
+      top: -20px;
+      animation-name: itMoves;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.46, 0.26, 0.46, 0.74);
+    }
+  }
+}
+@keyframes itMoves {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.4) translate(0, 10px);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
   }
 }
 .link-col {
   justify-content: flex-end;
   a {
     font-weight: 500;
+    &.white {
+      background-color: var(--ori-color-white);
+    }
   }
 }
 .burger-menu {

@@ -1,14 +1,6 @@
 <template>
-  <div
-    :style="{
-      'background-image':
-        'linear-gradient(90deg, rgba(221, 222, 226, 0.87) 25%, rgba(255, 255, 255, 0.00) 55%), url(' +
-        imgLink +
-        ')',
-    }"
-    class="o-container"
-  >
-    <v-container>
+  <div class="o-container">
+    <v-container class="sub-container">
       <v-row>
         <v-col cols="4">
           <h2>{{ title }}</h2>
@@ -20,6 +12,10 @@
             {{ buttonText }}
           </a>
         </v-col>
+        <div
+          class="media-col"
+          :style="{ 'background-image': 'url(' + imgLink + ')' }"
+        ></div>
       </v-row>
     </v-container>
   </div>
@@ -36,7 +32,7 @@ export default {
     imgLink: {
       type: String,
       required: false,
-      default: "../assets/img/600i-shadows.webp",
+      default: "./img/600i-shadows.webp",
     },
     content: {
       type: String,
@@ -61,11 +57,22 @@ export default {
 .o-container {
   width: 100vw;
   height: 50vh;
-  background-size: cover;
-  background-position: center;
   display: flex;
-  align-items: flex-end;
-  padding: 100px 0;
+  align-items: center;
+  position: relative;
+  .sub-container {
+    padding: 100px 0;
+  }
+  .media-col {
+    right: 0;
+    top: 0;
+    position: absolute;
+    height: 50vh;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    width: calc((100vw / 3 * 2) - 100px);
+  }
   h2 {
     font-size: 32px;
     font-weight: 500;

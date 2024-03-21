@@ -26,12 +26,7 @@
             </li>
           </ul>
         </v-col>
-        <img
-          class="nav-image"
-          :class="{ open: navOpen }"
-          src="../assets/img/appart-poster.png"
-          alt=""
-        />
+        <div class="gradient-bg" :class="{ open: navOpen }"></div>
       </v-row>
     </v-container>
   </nav>
@@ -54,6 +49,7 @@ export default {
 <style scoped>
 nav.nav {
   position: absolute;
+  overlay: hidden;
   top: 0;
   height: 100vh;
   left: 0;
@@ -107,18 +103,41 @@ nav.nav {
       }
     }
   }
-  img.nav-image {
-    width: 50%;
-    max-width: 100%;
-    height: auto;
+  .gradient-bg {
     position: absolute;
-    right: 0;
-    top: 55%;
-    transform: translate(400%, -52%);
-    transition: transform 1s var(--ori-trans) 0.4s;
+    bottom: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s var(--ori-trans) 0.2s;
+
+    background: radial-gradient(
+        85.91% 81.48% at 97.56% 102%,
+        #0029ff 0%,
+        #dddee200 100%
+      ),
+      rgba(221, 222, 226, 0);
+    z-index: -1;
     &.open {
-      transform: translate(0, -52%);
+      bottom: 0;
+      right: 0;
+      animation-name: itMoves;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.46, 0.26, 0.46, 0.74);
     }
+  }
+}
+
+@keyframes itMoves {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.4) translate(-40px, -100px);
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
   }
 }
 </style>

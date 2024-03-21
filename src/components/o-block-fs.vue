@@ -14,10 +14,6 @@
             <span>—</span>
             {{ buttonText }}
           </router-link>
-          <div v-else class="button">
-            <span>—</span>
-            {{ buttonText }}
-          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -35,7 +31,7 @@ export default {
     imgLink: {
       type: String,
 
-      default: "../assets/img/600i-shadows.webp",
+      default: "./img/600i-shadows.webp",
     },
     content: {
       type: String,

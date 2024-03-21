@@ -5,14 +5,14 @@
         title="100I series"
         content="The 600I serie is here to let you have the rest you deserve. Across the stars and landscapes, take your time without constrinct."
         :imgLink="ship100i"
-        buttonText=""
+        pageLink=""
       ></o-block-fs>
     </section>
     <section>
       <o-block-fs
         title="The concept"
         content="Tour the universe with the perfect coupling of luxury and performance. The most efficient and eco-friendly ship on the market. Capable of long distance flights that most ships of its size aren't equipped for, the 100i is perfect for solo pilots looking to turn heads without sacrificing functionality or reliability."
-        buttonText=""
+        pageLink=""
         :imgLink="sketch100i04"
       ></o-block-fs>
     </section>
@@ -36,7 +36,7 @@
       <o-block-fs
         title="A perfect balance"
         content="There is no need to choose between luxury and performance. The 100I is the perfect balance between both. A clueless design, without a single visible cable, bolt or screw. Smoother than ever."
-        buttonText=""
+        pageLink=""
         :imgLink="ext100i02"
       ></o-block-fs>
     </section>
@@ -44,7 +44,7 @@
       <o-block-fs
         title="AIR technology"
         content="The AIR technology for Adaptive Intake Refinery is a patented system that enables the 100I to fly at high speed in atmospheric conditions and with high manoeuvrability."
-        buttonText=""
+        pageLink=""
         :imgLink="ext100i01"
       ></o-block-fs>
     </section>

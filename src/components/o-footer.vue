@@ -3,11 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="3">
-          <img
-            src="../assets/img/logo-wide.svg"
-            alt="Origin logo"
-            class="logo-wide"
-          />
+          <img :src="logoWide" alt="Origin logo" class="logo-wide" />
           <ul>
             <li><a href="/policies#terms">Terms of service</a></li>
             <li><a href="/policies#privacy">Privacy policy</a></li>
@@ -112,6 +108,10 @@
     </v-container>
   </footer>
 </template>
+
+<script setup>
+import logoWide from "@/assets/img/logo-wide.svg";
+</script>
 
 <style scoped>
 footer {
