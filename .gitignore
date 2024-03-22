@@ -30,3 +30,22 @@ coverage
 *.tsbuildinfo
 
 # Media files and folders
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.svg
+*.gif
+*.webp
+*.webm
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.ico
+
+assets/img/*
+assets/video/*
+
+public/*
