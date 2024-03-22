@@ -6,6 +6,8 @@
 
 Time spent for this project : [![wakatime](https://wakatime.com/badge/user/ea8c41ab-c469-436f-8821-bf847d37bfd0/project/018e1921-d7e0-4c2d-abf0-fa679d360153.svg)](https://wakatime.com/badge/user/ea8c41ab-c469-436f-8821-bf847d37bfd0/project/018e1921-d7e0-4c2d-abf0-fa679d360153)
 
+_Pstt. Before reading this, if you wanted to fork this project there's the [setup.md](https://github.com/deavetheferret/origin-jumpworks/blob/main/setup.md) file._
+
 ## Table of content
 
 - [Introduction](#introduction)

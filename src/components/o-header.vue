@@ -139,7 +139,7 @@ header {
   }
 }
 .burger-menu {
-  width: var(--burger-bars-length);
+  width: 45px;
   display: flex;
   flex-direction: column;
   gap: 12px;
