@@ -29,7 +29,7 @@ const imageLoaded = () => {
   loadedImages++;
   if (loadedImages === 2) {
     setTimeout(() => {
-      loader.classList.remove("loading");
+      loader.style.opacity = 0;
     }, 4000);
     setTimeout(() => {
       loader.style.display = "none";
